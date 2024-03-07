@@ -1,0 +1,89 @@
+*{ /* Zerar o espaço entre a página e o navegador */
+  margin: 0%;
+  padding: 0%;
+}
+
+
+#cabecalho{
+  width: 1500px; /*Largura*/
+  height: 50px; /*Altura*/
+  margin: 0px auto; /*Alinhando ao centro da página*/
+  text-align: center; /*Alinhando o texto ao centro do cabeçalho*/
+  line-height: 50px; /*Mesmo valor da altura - Alinhar o texto do meio do cabeçalho*/
+  background-color: rgb(152, 123, 93); /*Cor de fundo*/
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  
+}
+#cabecalho1{
+  width: 1500px; /*Largura*/
+  height: 50px; /*Altura*/
+  margin: 0px auto; /*Alinhando ao centro da página*/
+  text-align: center; /*Alinhando o texto ao centro do cabeçalho*/
+  line-height: 80px; /*Mesmo valor da altura - Alinhar o texto do meio do cabeçalho*/
+  background-color: wheat; /*Cor de fundo*/
+  line-height: 50px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+a{
+  color: brown;
+  text-decoration: none; /* Remove o sublinhado do Link*/
+   
+ }
+.linksCabecalho{
+  margin: 0px 10px;
+  padding: 10px; /* Margem interna */
+  
+  
+}
+#conteudo{
+  width: 1460px; /*Largura*/
+  height: auto; /*Altura*/
+  margin: 0px auto 0px auto;
+  padding: 20px;
+  background-color: rgb(235, 235, 235);
+  text-align: left; /* Alinhas o texto */
+
+}
+h1{
+  text-align: center;
+
+}
+.logomarca{
+  width: 50px; 
+  height: 50px;
+  float: left; /*Flutuar para esquerda*/
+  margin: 0px 80px;
+ 
+}
+
+#banner{
+  width: 1000px;
+  margin: 0px auto;
+  padding: 20px ;
+  display: block; /* Serve para deixar a imagem presa */
+  border-radius: 20px;
+  
+}
+
+#corpoPagina{
+  width: 1100px; /*Largura*/
+  height: auto; /*Altura*/
+  margin: 0px auto 0px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#rodape{
+  width: 1500px; /*Largura*/
+  height: 100px; /*Altura*/
+  margin: 0px auto; /*Alinhando ao centro da página*/
+  text-align: center; /*Alinhando o texto ao centro do cabeçalho*/
+  line-height: 100px; /*Mesmo valor da altura - Alinhar o texto do meio do cabeçalho*/
+  background-color: black; /*Cor de fundo*/
+
+}
