@@ -1,0 +1,33 @@
+//Fazer uma calculadora que aceite todas as 4 operações (+,-,*,/)
+Algoritmo "calculadora"
+
+Var
+   n1, n2, resultado: real
+   operador: caractere
+
+Inicio
+   escreval("Calculadora")
+   escreval("-----------------")
+   escreval("Digite o primeiro número:")
+   leia(n1)
+   escreval("Digite a operação desejada: (+,-,*,/)")
+   leia(operador)
+   escreval("Digite o segundo número:")
+   leia(n2)
+
+   escolha operador
+   caso "+"
+      resultado<- n1 + n2
+   caso "-"
+      resultado<- n1 - n2
+   caso "*"
+      resultado<- n1 * n2
+   caso "/"
+      resultado <- n1 / n2
+   outroCaso
+      escreval("Operação inválida!!!")
+   fimescolha
+   escreval("-----------------")
+   escreval("O resultado é: ",resultado)
+
+Fimalgoritmo

@@ -1,39 +1,42 @@
-Algoritmo "LOTERIA"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 07/03/2024
-//Ler 4 números inteiros correspondentes  a números apostados em uma loteria.
-//Ler os 3 números sorteados. Informar quantos acertos o apostador fez.
+Algoritmo "ex2"
+
 Var
-   // Seção de Declarações das variáveis
-   numero, acerto, cont, sorteado, contador: inteiro
-
+   numerosSorteados: vetor[1..3] de inteiro
+   numerosApostados: vetor[1..4] de inteiro
+   contador: inteiro
+   acertos: inteiro
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   contador <- 1
-   cont <- 1
-   numero <- 0
-   acerto <- 0
-   enquanto contador <=4 faca
-      escreval("Informe um número")
-      leia(numero)
-      contador <- contador + 1
+   escreval("Digite os números apostados:")
+   para contador <- 1 ate 4 faca
+      leia(numerosApostados[contador])
+   fimPara
+   escreval("--------------------------")
+   escreval("Digite os números sorteados: ")
+   para contador <- 1 ate 3 faca
+      leia(numerosSorteados[contador])
+   fimPara
 
-   fimenquanto
-   escreval("************************************")
-   enquanto cont <=3 faca
-      escreval("Informe os números sorteados")
-      leia(sorteado)
-      cont <- cont + 1
-      se numero = sorteado entao
-         acerto <- acerto + 1
+   se (numerosApostados[1] = numerosSorteados[1]) ou (numerosApostados[1] = numerosSorteados[2]) ou (numerosApostados[1] = numerosSorteados[3]) entao
+      acertos <- acertos + 1
+   fimSe
+   se (numerosApostados[2] = numerosSorteados[1]) ou (numerosApostados[2] = numerosSorteados[2]) ou (numerosApostados[2] = numerosSorteados[3]) entao
+      acertos <- acertos + 1
+   fimSe
+   se (numerosApostados[3] = numerosSorteados[1]) ou (numerosApostados[3] = numerosSorteados[2]) ou (numerosApostados[3] = numerosSorteados[3]) entao
+      acertos <- acertos + 1
+   fimSe
+   se (numerosApostados[4] = numerosSorteados[1]) ou (numerosApostados[4] = numerosSorteados[2]) ou (numerosApostados[4] = numerosSorteados[3]) entao
+      acertos <- acertos + 1
+   fimSe
+
+   escreval("--------------------------")
+   se (acertos = 0) entao
+      escreval("Você não acertou nenhum!")
+   senao
+      se (acertos > 0 ) e (acertos < 3) entao
+         escreval("Você acertou ", acertos," números!")
       senao
+         escreval("Você ganhou na loteria!!!")
       fimse
-   fimenquanto
-   escreval("************************************")
-   escreval (acertos)
-
-
+   fimse
 Fimalgoritmo
