@@ -20,14 +20,14 @@ quantidade150, totalFamilia, totalFilhos, percentual :real
 contador: inteiro
 
 Inicio
-    para contador <- 1 ate 3 faca
+    para contador <- 1 ate 5 faca
     escreval (contador," Informe a Quantidade de filhos: ")
       leia (filhos)
     escreval (contador," Informe o Salário da família:")
       leia (salario)
      fimPara
 
-     para contador <- 1 ate 3 faca
+     para contador <- 1 ate 5 faca
        totalSalario <- totalSalario + salario
        totalFilhos <- totalFilhos + filhos
        totalFamilia <- totalFamilia + 1
@@ -37,15 +37,14 @@ Inicio
     se (salario <= 150) entao
       quantidade150 <- quantidade150 + 1
     fimSe
-fimPara
+    fimPara
 
 
-mediaSalario <- totalSalario / totalFamilia
-mediaFilhos <- totalFilhos / totalFamilia
-percentual <- quantidade150 * 100 / totalFamilia
+   mediaSalario <- totalSalario / totalFamilia
+   mediaFilhos <- totalFilhos / totalFamilia
+   percentual <- quantidade150 * 100 / totalFamilia
       escreval ("A média de salário da população é de R$ ", mediasalario)
       escreval ("A média de filhos por família é de : ", mediaFilhos)
       escreval ("O maior salário encontrado foi de R$ : ", maiorsalario)
       escreval ("O percentual de famílias com salário de até R$ 150,00 reais é de :", percentual)
-
 Fimalgoritmo
