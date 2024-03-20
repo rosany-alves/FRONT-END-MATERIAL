@@ -55,12 +55,16 @@ main{
     display: flex;
     overflow: hidden;
 }
-#efeito, #formulario{
+#efeito, #formulario, #efeitoLogin{
     width: 50%;
     height: 100%;
 }  
 #efeito{
     background-image: url(../images/gameboy.jpg);
+    background-size: cover;
+}
+#efeitoLogin{
+    background-image: url(../images/gaming.jpg);
     background-size: cover;
 }
 #banner{
@@ -96,4 +100,56 @@ button{
     background-color: var(--corPrimaria);
     color: var(--branco);
     cursor: pointer;
+}
+footer {
+    background-color: var(--corSecundaria);
+    color: var(--preto);
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+.produto{
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--branco);
+    box-shadow: 5px 5px var(--preto);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#catalogo{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px auto;
+}
+#links{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: var(--cinza);
+    justify-content: center;
+    gap: 20px;
+
+}
+#cabecalho{
+    width: 100%;
+    height: 90px;
+    background-color: var(--corSecundaria);
+    font-size: 10px;
+    color: var(--corTitulo);
+    font: var(--fontTitulo);
+}
+#conteudo{
+    width: 100%;
+    display: flex;
+    align-items: column;
+    flex-direction: column;
+    background-color: var(--corPrimaria);
+    font: var(--fontConteudo);
 }
