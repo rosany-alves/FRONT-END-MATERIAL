@@ -48,11 +48,11 @@
 
 }
 main{
-    width: 70%;
-    height: 80%;
+    width: 100%;
     background-color: var(--branco);
     border-radius: 10px;
     display: flex;
+    flex-direction: column ;
     overflow: hidden;
 }
 #efeito, #formulario, #efeitoLogin{
