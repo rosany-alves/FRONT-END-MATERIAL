@@ -4,46 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <!--bibliotecas https://animate.style/-->
+    <title>CADASTRO</title>
+    <link rel="shortcut icon" href="images/iconController.svg" type="image/x-icon">
+    <!-- Bibliotecas -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!--personal links-->
+    <!-- personal links -->
     <link rel="stylesheet" href="styles/geral.css">
     <link rel="stylesheet" href="styles/index.css">
-    
 </head>
 <body>
     <div id="page">
         <main>
-            <!--https://cssgradient.io/ e imagens: https://unsplash.com/pt-br e fontes https://www.dafont.com/pt/-->
             <div id="efeito">
-                <div id="banner"> 
-                </div>
+                <div id="banner"></div>
             </div>
             <div id="formulario">
-                <h3 class="animate_animated animate__shakeY">CADASTRO</h3>
+                <h3 class="animate__animated animate__pulse">CADASTRO</h3>
                 <form action="pages/home.html" method="post">
-                    <!--nome-->
-                    <label for="nomeDeUsuario">Digite seu nome:</label>
-                    </required>
+                    <!-- nome -->
+                    <label for="nomeDeUsuario">Digite seu nome :</label>
                     <input required type="text" id="nomeDeUsuario">
-                    <!--email-->
-                    <label for="emailDoUsuario">Digite seu e-mail:</label>
+                    <!-- email -->
+                    <label for="emailDoUsuario">Digite o seu email :</label>
                     <input required type="email" id="emailDoUsuario">
-                    <!--senha-->
-                    <label for="senhaDoUsuario">Digite a sua senha:</label>
+                    <!-- senha -->
+                    <label for="senhaDoUsuario">Digite a sua senha :</label>
                     <input required type="password" id="senhaDoUsuario">
-                    <!--data de nascimento-->
-                    <label for="dataNascimento">Coloque sua data de nascimento</label>
+                    <!-- data de nascimento -->
+                    <label for="dataNascimento">Coloque a sua data de nascimento</label>
                     <input type="date" id="dataNascimento">
+                    
                     <a href="pages/home.html">
                         <button type="button">CADASTRAR</button>
                     </a>
-                    <button type="reset">RESETAR</button>
-                    <a href="pages/login.html"> Já tem uma conta? Faça o login!</a>
                     
-                    <!--outros inputs-->
-                    <!-- input type="file"
+                    <button type="reset">RESETAR</button>
+
+                    <a href="pages/login.html">Já tem uma conta? Faça o login!</a>
+                    
+                    <!-- outros inputs -->
+                    <!-- <input type="file">
                     <input type="checkbox" name="" id="">
                     <input type="color" name="" id="">
                     <input type="number" name="" id="">
@@ -52,6 +52,6 @@
                 </form>
             </div>
         </main>
-    </div>  
-</body>
+    </div>
+</body> 
 </html>

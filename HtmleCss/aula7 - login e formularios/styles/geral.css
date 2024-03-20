@@ -1,6 +1,6 @@
 @font-face {
-    font-family: WildTrails;
-    src: url(../fonts/wild_trails/Wild\ Trails.ttf);
+    font-family: GameBoy ;
+    src: url(../fonts/early_gameboy/Early\ GameBoy.ttf);
 }
 
 @keyframes mudaCor {
@@ -26,7 +26,7 @@
     --corSecundaria : rgb(35, 35, 35) ;
     --branco : rgb(255, 255, 255);
     --preto : rgb(18, 18, 18);
-    --fontePrimaria : WildTrails;
+    --fontePrimaria : GameBoy ;
     --fonteSecundaria : 'Trebuchet MS' ;
 }
 
