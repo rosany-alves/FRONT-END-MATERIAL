@@ -4,18 +4,23 @@
 }
 @keyframes mudaCor {
     0%{
-        margin-left: 80px;
-        color: black;
+        /*margin-left: 80px;*/
+        color: var(--preto);
+    }
+    25%{
+        color: green;
     }
     50%{
-        margin-left: 30px;
-        color: red;
+       /*margin-left: 30px;*/
+        color: var(--corPrimaria);
+    }
+    75%{
+        color: green;
     }
     100%{
-        margin-left: 0px;
-        color:blue;
-    }
-    
+        /*margin-left: 0px;*/
+        color: var(--preto);
+    }  
 }
 
 /*cores e fontes*/
@@ -65,11 +70,30 @@ main{
     background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(113,112,132,0.6026785714285714) 44%, rgba(254,255,255,1) 100%);
 }
 h3{
+    text-align: center;
     animation-name: mudaCor;
+    margin: 10px 0px;
     animation-duration: 2s;
     animation-iteration-count:  infinite;
 }
 #formulario form{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    width: 70%;
+    padding: 5px;
+    border: solid;
+    border: solid var(--corPrimaria) 2px;
+    /*border-bottom*/
+}
+button{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: var(--corPrimaria);
+    color: var(--branco);
+    cursor: pointer;
 }

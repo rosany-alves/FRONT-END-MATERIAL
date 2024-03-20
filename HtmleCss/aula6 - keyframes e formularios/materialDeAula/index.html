@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <!--bibliotecas https://animate.style/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--personal links-->
     <link rel="stylesheet" href="styles/geral.css">
     <link rel="stylesheet" href="styles/index.css">
-
 </head>
 <body>
     <div id="page">
@@ -21,8 +22,8 @@
             </div>
             
             <div id="formulario">
-                <h3>CADASTRO</h3>
-                <form action="#" method="post">
+                <h3 class="animate_animated animate__shakeY">CADASTRO</h3>
+                <form action="pages/home.html" method="post">
                     <!--nome-->
                     <label for="nomeDeUsuario">Digite seu nome:</label>
                     </required>
@@ -38,6 +39,7 @@
                     <input type="date" id="dataNascimento">
                     <button type="subimit">CADASTRAR</button>
                     <button type="reset">RESETAR</button>
+                    <a href="pages/login.html"> Já tem uma conta? Faça o login!</a>
                     
                     <!--outros inputs-->
                     <!-- input type="file"
