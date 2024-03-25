@@ -1,0 +1,43 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+:root{
+    --primaria: rgb(104, 124, 212);
+    --branco: white;
+}
+
+main{
+    width: 90%;
+    padding: 30px;
+    margin: 10px auto; /*espaço no eixo Y e X*/
+}
+
+header{ /*menu*/
+    width: 100%;
+    display: flex;
+    background-color: var(--primaria);
+    padding: 10px 0px; /*espaço no eixo em cima embaixo*/
+    justify-content: space-between; /*local do menu - alinhado*/
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px; /*espaçamento entre os menu*/
+    /*background: aqua; */
+    height: 100%;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+logo img{
+    height: 30px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--branco);
+}
