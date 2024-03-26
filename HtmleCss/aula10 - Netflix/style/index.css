@@ -1,0 +1,26 @@
+.menuPc{
+    display: flex;
+
+}
+
+.menuMobile{
+    display: none;
+
+}
+
+/* @media print{
+    main{
+        color: red;
+    }
+} */
+
+@media screen and (max-width : 820px) {
+    .menuPc{
+        display: none;
+    }
+
+    .menuMobile{
+        display: flex;
+    }
+}
+
