@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/index.css">
     <!--landscape - paisagem-->
     <!--landscape - retrato-->
-    <link rel="stylesheet" href="style/@media.css" media="screen and (orientation : portrait)">
+    <link rel="stylesheet" href="style/@media.css" media="screen and (max-width:820px)">
     <!--landscape - p/celular
     <link rel="stylesheet" href="style/@media.css" media="screen and (max-width :820px)">-->
     
@@ -46,19 +46,63 @@
        
         <!-- header lado direito mobile-->
         <aside class="menuMobile">
-            <img src="images/interface icons/menu.svg" alt="menu">
+            <img onclick="abrirMenu()" id="abrirMenu" src="images/interface icons/menu.svg" alt="menu">
         </aside>
     </header>
+
     <main>
-        <!-- imagens responsivas-->
+        <div id="menuMobileShow">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Séries TV</a></li>
+                    <li><a href="#">Em Alta</a></li>
+                    <li><a href="#">Terror</a></li>
+                    <li><a href="#">Suspense</a></li>
+                    <li><a href="#">Top da Semana</a></li>
+                    <img onclick="FecharMenu()" id="FecharMenu"src="images/interface icons/close.svg" alt="fechar">
+                </ul>
+            </nav>
+        </div>
+
+        <!-- imagens responsivas
         <picture>
             <source media="(min-width : 650px)" srcset="images/posters/batman-v-superman-dawn-of-justice-1.jpg" alt="superman">
             <source media="(min-width : 465px)" srcset="images/posters/a-ballerina-s-tale-3.jpg" alt="ballerina">
             <img src="images/posters/beyond-the-mask-1.jpg" alt="beyond">
-        </picture>
+        </picture>-->
+
+        <div class="bannerGrupo" id="bannerNarcos">
+            <div class="bannerTexto">
+                <h3> NETFLIX ORIGINALS</h3>
+                <h1>NARCOS</h1>
+                <h5>TEMPORADA 3</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, exercitationem quisquam officiis obcaecati illo, perferendis atque debitis sit minima at consectetur quos nihil numquam, iure accusamus. Distinctio vel deserunt nemo!</p>
+                <div class="btnBanner">
+                    <button type="button">
+                        <img src="images/interface icons/play.svg">
+                        Assistir
+                    </button>
+                    <button type="button">
+                        <img src="images/interface icons/add.svg">
+                        Adicionar a lista
+                    </button>
+                </div>
+            </div>
+        </div>
 
     </main>
+
     <footer></footer>
+
+    <script>
+        function abrirMenu(){
+            menuMobileShow.style.display="flex"
+        }
+        function FecharMenu(){
+            menuMobileShow.style.display="none"
+        }
+    </script>
     
 </body>
 </html>

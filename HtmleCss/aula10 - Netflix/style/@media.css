@@ -1,3 +1,11 @@
-body{
-    background-color: rgb(128, 5, 5);
+.menuPc{
+    display: none;
+}
+
+.menuMobile{
+    display: flex;
+}
+
+.bannerGrupo{
+    height: auto;
 }

@@ -12,15 +12,86 @@
     main{
         color: red;
     }
-} */
+} 
 
 @media screen and (max-width : 820px) {
-    .menuPc{
-        display: none;
-    }
+    
+}*/
 
-    .menuMobile{
-        display: flex;
-    }
+.bannerGrupo{
+    width: 100%;
+    height: 300px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+}
+
+#bannerNarcos{
+    background-image: url(../images/posters/narcos.png);
+}
+
+.bannerTexto{
+    width: 50%;
+    height: 100%;
+    background: rgb(29,28,28);
+    background: linear-gradient(90deg, rgba(29,28,28,0.9898674242424242) 42%, rgba(11,11,11,0.8216867469879519) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 10px;
+    
+}
+
+.bannerTexto h3{
+    font-size: 12pt;
+}
+
+.bannerTexto h1{
+    font-size: 45pt;
+    margin: 0px 10px;
+}
+.btBanner{
+    display: flex;
+    gap: 20px;
+}
+
+.btBanner button{
+    background-color: rgba(132, 132, 132, 0.828);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+
+.btBanner button:hover{
+    background-color: rgb(21, 21, 21);
+}
+
+/*menu mobile*/
+#menuMobileShow{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 127, 0.825);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuMobileShow ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menuGrupo{
+    display: auto;
 }
 
