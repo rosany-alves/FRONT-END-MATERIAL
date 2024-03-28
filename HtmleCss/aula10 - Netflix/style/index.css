@@ -21,7 +21,6 @@
 .bannerGrupo{
     width: 100%;
     height: 300px;
-    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -33,7 +32,7 @@
 }
 
 .bannerTexto{
-    width: 50%;
+    width: 40%;
     height: 100%;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(0,212,255,0) 100%);
@@ -53,12 +52,12 @@
     font-size: 45pt;
     margin: 0px 10px;
 }
-.btBanner{
+.btnBanner{
     display: flex;
     gap: 20px;
 }
 
-.btBanner button{
+.btnBanner button{
     background-color: rgba(132, 132, 132, 0.828);
     display: flex;
     align-items: center;
@@ -68,7 +67,7 @@
     color: white;
 }
 
-.btBanner button:hover{
+.btnBanner button:hover{
     background-color: rgb(21, 21, 21);
 }
 
@@ -76,7 +75,7 @@
 #menuMobileShow{
     width: 100%;
     height: 100vh;
-    background-color: rgba(128, 128, 127, 0.825);
+    background-color: rgba(128, 128, 128, 0.91);
     position: absolute;
     top: 0;
     display: none;
@@ -89,9 +88,5 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
-
-.menuGrupo{
-    display: auto;
 }
 
