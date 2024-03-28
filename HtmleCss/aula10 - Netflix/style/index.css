@@ -35,8 +35,8 @@
 .bannerTexto{
     width: 50%;
     height: 100%;
-    background: rgb(29,28,28);
-    background: linear-gradient(90deg, rgba(29,28,28,0.9898674242424242) 42%, rgba(11,11,11,0.8216867469879519) 100%);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(0,212,255,0) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
