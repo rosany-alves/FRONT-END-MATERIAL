@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="images/logo/Spotify_logo_without_text.svg" type="image/x-icon">
+</head>
+<body class="w-100">
+    <section id="menuLateral">
+        <!-- BOTÃO MENU LATERAL-->
+        
+
+          <!-- OFFCANVAS MENU LATERAL-->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <main>
+        <header>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <img id="logo" src="images/Logo/Spotify_logo_without_text.svg" alt="logo">
+                      </button>
+                </div>
+              </nav>
+        </header>
+
+        <section id="musicas">
+            <!-- linha de músicas e comando de flexibilidade-->
+            <div class="linhaDeMusica d-flex align-items-center gap-4 flex-column flex-lg-row container">
+              <!--música1-->
+              <div class="card" style="width: 200px;">
+                <img src="images/Álbuns - Músicas/musica11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Music</p>
+                </div>
+              </div>
+              <!--música2-->
+              <div class="card" style="width: 200px;">
+                <img src="images/Álbuns - Músicas/musica2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Pop Food</p>
+                </div>
+              </div>
+              <!--música3-->
+              <div class="card" style="width: 200px;">
+                <img src="images/Álbuns - Músicas/musica3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Sinatra</p>
+                </div>
+              </div>
+              <!--música4-->
+              <div class="card" style="width: 200px;">
+                <img src="images/Álbuns - Músicas/musica4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">David Guetta</p>
+                </div>
+              </div>
+              <!--música5-->
+              <div class="card" style="width: 200px;">
+                <img src="images/Álbuns - Músicas/musica5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Divide</p>
+                </div>
+              </div>
+              <!--música6-->
+              <div class="card" style="width: 200px;">
+                <img src="images/Álbuns - Músicas/musica6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Billie Eilish</p>
+                </div>
+              </div>
+
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
