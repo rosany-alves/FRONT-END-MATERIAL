@@ -1,12 +1,5 @@
 *{
     padding: 0%;
     margin: 0%;
-}
-
-.resultado{
-    width: 80%;
-    padding: 20px;
-    margin: 20px auto;
-    background-color: rgb(163, 107, 33);
-    border: 1px solid black;
+    background-color: rgb(179, 128, 226);
 }
