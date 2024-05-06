@@ -22,7 +22,7 @@ function pesquisar(){
     if(pesquisa == true){
         resposta2.innerHTML = `Opa o termo foi encontrado!`;
     }else{
-        resposta2.innerHTML = `o termo foi encontrado!`
+        resposta2.innerHTML = `o termo não foi encontrado!`
     }
     //indexOf verifica se existe, também retorna indice
 
