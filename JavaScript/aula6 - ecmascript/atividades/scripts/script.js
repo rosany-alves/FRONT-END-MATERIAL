@@ -1,43 +1,43 @@
+const btnPesquisar = document.querySelector('#btnResposta');
+const jogos = ["Resident Evil","Dota 2","Free Fire","League of Legends","Castlevania"];
+
+btnPesquisar.addEventListener('click',pesquisar);
+
 function pesquisar(){
-    var filmes = ["Vingadores","Pokemon","Era do Gelo","Batman","Coringa"];
-    var pesquisa = filmes.includes("Pokemon");
-    var resposta = document.querySelector("#resposta2");
-    //resposta2.innerHTML = pesquisa
-    if(pesquisa == true){
-        resposta.innerHTML = `O jogo foi encontrado!`;
+    let jogoPesquisado = document.querySelector("#inputResposta").value;
+    let resposta = document.querySelector("#pesquisarResposta");
+
+    let respostaPesquisa = jogos.includes(jogoPesquisado);
+
+    if(respostaPesquisa == true){
+        resposta.innerHTML = `Jogo encontrado! Item da pesquisa: ${jogoPesquisado}`;
+
     }else{
-        resposta.innerHTML = `O jogo não foi encontrado!`
+        resposta.innerHTML = `Jogo ${jogoPesquisado} não foi encontrado!`;
     }
-    //indexOf verifica se existe, também retorna indice
-
-    var termoPesquisado = "TESTE";
-    var pesquisa = filmes.indexOf("termoPesquisado");
-//resposta2.innerHTML += pesquisa2;
-if(pesquisa2 == -1){
-    resposta.innerHTML += `<br>O elemento ${termoPesquisado} digitado não foi encontrado!`;
-}else{
-    resposta.innerHTML += `<br>O elemento ${filmes[pesquisa2]} foi encontrado`;
 }
 
+const btnReplace = document.querySelector("#btnReplace");
+const btnReplaceAll = document.querySelector("#btnReplaceAll");
+
+
+btnReplace.addEventListener("click",substituirUm);
+btnReplace.addEventListener("click",substituirTodos);
+
+function substituirUm(){
+    let texto = document.querySelector("#texto").value;
+    let acharTermo = document.querySelector("#acharTermo").value;
+    let trocarTermo = document.querySelector("#TrocarTermo").value;
+
+    let textoAtualizado = texto.replace(acharTermo,trocarTermo);
+    document.querySelector("#texto").value = textoAtualizado;
 }
 
+function substituirTodos(){
+    let texto = document.querySelector("#texto").value;
+    let acharTermo = document.querySelector("#acharTermo").value;
+    let trocarTermo = document.querySelector("#TrocarTermo").value;
 
-
-
-function replaceEcma(){
-    //colocando  frase base
-    var frase = "olá mundo, o mundo está maravilhoso, pois todo mundo está sorrindo"
-    var resposta = document.querySelector('#resposta');
-
-    resposta2.innerHTML = frase;
-
-    //replace = substitui um termo de string
-    var fraseModificada = frase.replace("mundo","ryan");
-    resposta.innerHTML += `<br>${fraseModificada}`;
-
-    //replaceAll = substitui todos os termos de string
-    var fraseModificada = frase.replace("mundo","Bolo");
+    let textoAtualizado = texto.replaceAll(acharTermo,trocarTermo);
+    document.querySelector("#texto").value = textoAtualizado;
 }
-
-pesquisar();
-replaceEcma();

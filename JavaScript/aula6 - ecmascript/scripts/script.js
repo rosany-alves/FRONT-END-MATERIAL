@@ -51,7 +51,29 @@ function pad(){
 }
 // aula 7
 function objectEntries(){
+    const aluno = {
+        matricula : 180,
+        cursosFinalizados : ["Front","UX","Banco de Dados"],
+        cursoAtual : "Dominó",
+        nome : "Raul"
+    }
+    //retorna apenas atributos do objeto (matricula, cursosFinalizados)
+    var alunoKey = Object.keys(aluno);
+    console.log(alunoKey);
 
+    //retornar apenas atributos e seus valores (matricula, 180 / cursosFinalizados, array)
+    var alunoEntries = object.aluno.entries(aluno);
+    console.log(alunoEntries);
+
+    //retorna somente valor (Dominó, Array)
+    console.log(aluno.matricula);
+
+    //map - faz um proceso para cada elemento do nosso array
+    var teste = ["Matricula","Front End"];
+    var mapResultado = teste.map((elemento) => {
+        console.log(elemento)
+    });
+    console.log(mapResultado)
 }
 
 function Promises(){
@@ -64,3 +86,4 @@ function Promises(){
 replaceEcma();
 pesquisar();
 pad();
+objectEntries();
