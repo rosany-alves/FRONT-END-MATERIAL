@@ -1,16 +1,16 @@
 *{
     padding: 0%;
     margin: 0%;
+    font-family: cursive;
 }
 
 body{
     width: 100%;
     height: 100vh;
-    background-color: yellow;
+    background-color: rgb(240, 203, 38);
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #personagem{
@@ -22,4 +22,7 @@ main{
     padding: 20px;
     background-color: white;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }

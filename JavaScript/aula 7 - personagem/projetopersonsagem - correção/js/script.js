@@ -1,8 +1,9 @@
-class Pikachu{
+class Personagem{
     constructor(nome,vida,dano,itemPrincipal){
         this.nome = nome;
         this.vida = vida;
         this.dano = dano;
+        this.nivel = 0;
         this.items = [itemPrincipal];
         this.atacar = function(){
 
@@ -19,44 +20,84 @@ class Pikachu{
     }
 }
 
-var link = new Pikachu("Pikachu",10,1,'energia eletrica');
+var link = new Personagem("link do Pikachu",10,1,"Choque Elétrico");
 
 function listarEstatisticas(){
     let estatisticas = document.querySelector("#estatisticas");
 
     estatisticas.innerHTML = `
-    <p>🙂Nome: ${link.nome}</p>
+    <p>😊Nome: ${link.nome}</p>
     <p>❤️Vida: ${link.vida}</p>
     <p>⚔️Dano: ${link.dano}</p>
-    <p>🚨Items: ${link.items}</p>
-    <button id="atacar" onclick="atacar(${link.dano})">💣ATACAR</button>
-    <button id="curar" onclick="curar(1)">💊CURAR</button>
-    <button id="ganharXP" onclick="upar(1)">🎉GANHAR XP</button>
-    <button id="tomarDano" onclick="tomarDano(1)"🩸TOMAR DANO</button>
+    <p>💼Items: ${link.items}</p>
+    <p>💫Nível: ${link.nivel}</p>
 
+    <button id="atacar" onclick="atacar(${link.dano})">💣ATACAR</button>
+    <button id="curar" onclick="curar(1)">🩹CURAR</button>
+    <button id="ganharXp" onclick="upar(1)">🌟Ganhar XP</button> 
+    <button id="tomarDano" onclick="tomarDano(1)">🩸Tomar dano</button>     
     `
 }
-
 listarEstatisticas();
 
-function tomarDano(dano){
-    link.vida += dano;
+function upar(nivel){
+    link.nivel += nivel;
 
-    if(link.vida <= 0){
-        let pikachu = document.querySelector("#Pikachu");
-        pikachu.setAttribute("src","images/pikachumorto.png");
+    if(link.nivel == 10){
+        link.dano = 10;
+        link.vida = 15;
+        link.items.push("Arco");
+        let personagem = document.querySelector("#personagem");
+    
+    setTimeout(function(){
+        personagem.setAttribute("src", "image/gokuSayagin.png");
+    },400)
+    }else{
+    link.nivel += nivel;
+
+    }
+    listarEstatisticas();
+}
+
+function tomarDano(dano){
+    link.vida -= dano;
+    if(link.vida <=0){
+        link.vida = 0;
+        let personagem = document.querySelector("#personagem");
+        personagem.setAttribute("src","images/pikachupoder.jpg");
+        setTimeout(function(){
+            personagem.setAttribute("src", "images/picachu.svg");
+        },400)
+        listarEstatisticas();
+    }else{
+        let personagem = document.querySelector("#personagem");
+        personagem.setAttribute("src","images/pikachumorto.png");
+        setTimeout(function(){
+            personagem.setAttribute("src", "images/picachu.svg");
+        },400)
+        link.vida -= dano;
         listarEstatisticas();
     }
-
-    listarEstatisticas();
 }
 
 function curar(cura){
-    link.vida += cura;
-    listarEstatisticas();
+    let personagem = document.querySelector("#personagem");
+
+    if(link.vida <= 0){
+        link.vida = 1;
+        personagem.setAttribute("src", "images/picachu.svg");
+        setTimeout(function(){
+            personagem.setAttribute("src", "images/pikachupoder.jpg");
+        },400)
+        listarEstatisticas();
+
+    }else{
+        link.vida += cura;
+        listarEstatisticas();
+    }
+
 }
 
 function atacar(dano){
     alert(`Você causou ${dano} de dano`);
 }
-
