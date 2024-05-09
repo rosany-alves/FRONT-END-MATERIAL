@@ -19,7 +19,7 @@ $("#teste").on("click", function(){
     $("#teste").text("Acertou!");
     $("#teste").addClass("teste");
     $("#testeImagem").html(`<img src="..." alt="Uma imagem">`);
-    //$("#teste").removeClass("teste");
+    // $("#teste").removeClass("teste");
 })
 
 console.log(teste);
