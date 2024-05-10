@@ -3,7 +3,9 @@ body{
     background-size: cover;
 }
 #teste{
-    width: 200px;
-    height: 200px;
-    background-color: black;
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/Chocolatebanner.jpg);
+    background-size: cover;
+     /*background-color: black;*/
 }
