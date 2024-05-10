@@ -1,0 +1,9 @@
+body{
+    background-image: url(../images/chocolate.jpg);
+    background-size: cover;
+}
+#teste{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
